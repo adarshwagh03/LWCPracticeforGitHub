@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title = "Parent Component of @api Decoretor As Property">
+        <lightning-input label = "Enter the Message to send" placeholder="Enter text here!"></lightning-input>
+        <lightning-button label = "Send" onclick = {handleClick}></lightning-button>
+        <c-child-component-api-property child-text-var={message}></c-child-component-api-property>
+    </lightning-card>
+</template>
