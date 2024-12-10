@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title = "Search Account By Name using @wire">
+       
+        <template if:true = {accRecData}>
+            <lightning-datatable 
+                key-field = "Id"
+                columns = {columns}
+                data = {accRecData}
+            >
+
+            </lightning-datatable>
+        </template>
+        
+    </lightning-card>
+       
+</template>

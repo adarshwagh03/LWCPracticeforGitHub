@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title = "Imparetive Method">
+
+        <template if:true = {accRecData}>
+            <lightning-combobox 
+                name = "Accounts"
+                label = "Select Account"
+                value = {selectedAccountId}
+                placeholder = "Select Account"
+                options = {accRecData}
+                onchange = {handleSelect}
+            >
+
+            </lightning-combobox>
+        </template>
+        
+        <template if:true = {contacts}>
+           
+                <template for:each = {contacts} for:item = "con">
+                    <div key = {con.Id}>{con.LastName}   </div>
+                </template>
+            
+        </template>
+        
+    </lightning-card>
+</template>
